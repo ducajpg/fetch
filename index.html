@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <!-- <div>peliculas vistas<input type="text" id="inputPeli"><button>submit</button></div> -->
+        </header>
+        <h2>El Club</h2>
+        <h3>¿Cuál opción elegís?</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <!-- Pelicula random de la semana -->
+                        <h3>Las peliculas de la semana</h3>
+    
+                        <button id="botonTerror" class="btnRandom">Terror</button>
+                        <button id="botonComedia" class="btnRandom">Comedia</button>
+                        <button id="botonSuspenso" class="btnRandom">Suspenso</button>
+                        <button id="botonScifi" class="btnRandom">Sci-fi</button>
+                        <!-- Filtrar opciones-->           
+                    </ul>
+                    <p id="resultadoBoton"></p>
+                </div>
+                <div class="col">
+                    <h3>¿Qué tipo de pelicula?</h3>
+                    <div>
+                        <div>
+                        <label for="opciones"></label>
+                        <select name="opcionesGenero" id="opcionesGenero">
+                            <option value="terror">Terror</option>
+                            <option value="accion & aventuras">Acción & aventuras</option>
+                            <option value="anime">Anime</option>
+                            <option value="biografia">Biografía</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="crimen">Crimen</option>
+                            <option value="drama">Drama</option>
+                            <option value="fantasia">Fantasía</option>
+                            <option value="sci-fi">Sci-fi</option>
+                        </select>
+                        </div>
+                        <div>
+                        <label for="ranking"></label>
+                        <select name="" id="opcionesRanking">
+                            <option value="9">>9</option>
+                            <option value="8">>8</option>
+                            <option value="7">>7</option>
+                            <option value="6">>6</option>
+                            <option value="5">>5</option>
+                            <!-- <option value="cualquier">Cualquier</option> -->
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        </main>
+
+        <script src="./main.js"></script>
+</body>
+</html>
